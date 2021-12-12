@@ -27,7 +27,7 @@ allprojects {
   Step 3. Call displayBiometricPrompt Method as per your requirement.
   
   ```
-  Authentication(this, object : AuthResult {
+  FingerAuthentication(this, object : AuthResult {
             override fun deviceHaveNotAuth() {
                 Toast.makeText(
                     applicationContext,
