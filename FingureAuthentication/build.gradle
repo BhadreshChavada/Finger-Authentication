@@ -29,14 +29,6 @@ afterEvaluate {
         }
     }
 
-
-//    uploadArchives {
-//        repositories {
-//            mavenDeployer {
-//                repository(url: mavenLocal().getUrl())
-//            }
-//        }
-//    }
 }
 android {
     compileSdk 31

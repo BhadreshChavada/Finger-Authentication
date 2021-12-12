@@ -11,7 +11,7 @@ import java.util.concurrent.Executor
 Created by Bhadresh on 12,December,2021
  */
 
-public class Authentication(
+public class FingerAuthentication(
     val contextCompat: FragmentActivity,
     val authResult: AuthResult,
     val title: String = "Biometric login",

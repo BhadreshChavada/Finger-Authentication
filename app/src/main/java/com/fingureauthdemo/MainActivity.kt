@@ -5,7 +5,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.FingureAuthentication.AuthResult
-import com.FingureAuthentication.Authentication
+import com.FingureAuthentication.FingerAuthentication
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun authVerification() {
-        Authentication(this, object : AuthResult {
+        FingerAuthentication(this, object : AuthResult {
             override fun deviceHaveNotAuth() {
                 Toast.makeText(
                     applicationContext,
