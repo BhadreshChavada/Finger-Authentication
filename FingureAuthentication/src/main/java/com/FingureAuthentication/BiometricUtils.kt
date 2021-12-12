@@ -1,11 +1,8 @@
 package com.FingureAuthentication
 
-import android.Manifest
 import android.content.Context
 import android.os.Build
-import androidx.core.hardware.fingerprint.FingerprintManagerCompat
-import androidx.core.app.ActivityCompat
-import android.content.pm.PackageManager
+import androidx.core.hardware.fingerprint.FingerprintManagerCompat.from
 
 /**
  * Created by Bhadresh on 12,December,2021
@@ -33,7 +30,7 @@ object BiometricUtils {
      *
      * */
     fun isHardwareSupported(context: Context?): Boolean {
-        val fingerprintManager = FingerprintManagerCompat.from(context!!)
+        val fingerprintManager = from(context!!)
         return fingerprintManager.isHardwareDetected
     }
 
@@ -44,18 +41,8 @@ object BiometricUtils {
      *
      * */
     fun isFingerprintAvailable(context: Context?): Boolean {
-        val fingerprintManager = FingerprintManagerCompat.from(context!!)
+        val fingerprintManager = from(context!!)
         return fingerprintManager.hasEnrolledFingerprints()
     }
 
-    /*
-     * Condition IV: Check if the permission has been added to
-     * the app. This permission will be granted as soon as the user
-     * installs the app on their device.
-     *
-     * */
-    fun isPermissionGranted(context: Context?): Boolean {
-        return ActivityCompat.checkSelfPermission(context!!, Manifest.permission.USE_FINGERPRINT) ==
-                PackageManager.PERMISSION_GRANTED
-    }
 }
