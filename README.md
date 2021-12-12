@@ -1,5 +1,8 @@
 # Finger-Authentication
 
+[![](https://jitpack.io/v/BhadreshChavada/Finger-Authentication.svg)](https://jitpack.io/#BhadreshChavada/Finger-Authentication)
+
+
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
@@ -17,7 +20,7 @@ allprojects {
   
   ```
   dependencies {
-	        implementation 'com.github.BhadreshChavada:Finger-Authentication:1.0'
+	        implementation 'com.github.BhadreshChavada:Finger-Authentication:Tag'
 	}
   ```
   
