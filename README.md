@@ -4,6 +4,7 @@ Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
 
+```
 allprojects {
 		repositories {
 			...
@@ -11,15 +12,18 @@ allprojects {
 		}
 	}
   
-  
+  ```
   Step 2. Add the dependency
   
+  ```
   dependencies {
 	        implementation 'com.github.BhadreshChavada:Finger-Authentication:1.0'
 	}
+  ```
   
   Step 3. Call displayBiometricPrompt Method as per your requirement.
   
+  ```
   Authentication(this, object : AuthResult {
             override fun deviceHaveNotAuth() {
                 Toast.makeText(
@@ -62,6 +66,8 @@ allprojects {
             }
 
         }).displayBiometricPrompt()
+	
+	```
         
         Step 4 (Optional):
         
