@@ -20,7 +20,7 @@ allprojects {
   
   ```
   dependencies {
-	        implementation 'com.github.BhadreshChavada:Finger-Authentication:1.0'
+	        implementation 'com.github.BhadreshChavada:Finger-Authentication:Tag'
 	}
   ```
   
