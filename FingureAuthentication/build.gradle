@@ -34,7 +34,7 @@ publishing {
     publications {
         bar(MavenPublication) {
             groupId 'com.fingureauth'
-            artifactId 'bar'
+            artifactId 'authentation'
             version '0.1'
             artifact(sourceJar)
             artifact("$buildDir/outputs/aar/bar-release.aar")
