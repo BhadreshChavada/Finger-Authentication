@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
-    id 'maven-publish'
 }
 
 android {
@@ -30,22 +29,6 @@ task sourceJar(type: Jar) {
     classifier "sources"
 }
 
-publishing {
-    publications {
-        bar(MavenPublication) {
-            groupId 'com.fingureauth'
-            artifactId 'bar'
-            version '0.1'
-            artifact(sourceJar)
-            artifact("$buildDir/outputs/aar/bar-release.aar")
-        }
-    }
-    repositories {
-        maven {
-            url "$buildDir/repo"
-        }
-    }
-}
 
 dependencies {
 
